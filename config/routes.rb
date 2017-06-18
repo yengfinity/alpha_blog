@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get 'welcome/home', to: 'welcome#home'
-  get 'welcome/about', to: 'welcome#about'
+  root to: 'welcome#home'
+  get 'home', to: 'welcome#home'
+  get 'about', to: 'welcome#about'
 end

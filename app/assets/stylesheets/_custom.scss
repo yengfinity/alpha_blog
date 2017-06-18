@@ -1,0 +1,56 @@
+$navbar-default-bg: #8fbc8f;
+
+.jumbotron {
+  background-image: asset-url('disc.jpg');
+  background-size: cover;
+  height: 550px;
+}
+
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding: 15px 0;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+
+  a {
+   &:hover {
+    color: #222
+   }
+  }
+
+  small {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+
+    li {
+      float: left;
+    }
+  }
+}
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";

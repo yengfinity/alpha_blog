@@ -10,12 +10,12 @@
 <%= form_for @article do |f| %>
   <div class="form-group">
     <%= f.label :title %><br/>
-    <%= f.text_field :title, class: "form-control" %>
+    <%= f.text_field :title, class: "form-control", placeholder: "Title of article", autofocus: true %>
   </div>
 
   <div class="form-group">
     <%= f.label :description %><br/>
-    <%= f.text_area :description, class: "form-control" %>
+    <%= f.text_area :description, rows: 10, class: "form-control", placeholder: "Body of article", autofocus: true %>
   </div>
 
   <div class="form-group">
@@ -24,4 +24,4 @@
 
 <% end %>
 
-<%= link_to "Back to article listings", articles_path %>
+[ <%= link_to "Cancel request and return to article listings", articles_path %> ]

@@ -1,0 +1,25 @@
+<%= render 'shared/errors', obj: @user %>
+
+<%= form_for @user do |f| %>
+  <div class="form-group">
+    <%= f.label :username %><br/>
+    <%= f.text_field :username, class: "form-control", placeholder: "Enter username", autofocus: true %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :email %><br/>
+    <%= f.email_field :email, rows: 10, class: "form-control", placeholder: "Enter email", autofocus: true %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password %><br/>
+    <%= f.password_field :password, class: "form-control", placeholder: "Enter password", autofocus: true %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit(@user.new_record? ? "Sign Up" : "Update account", class: "btn btn-primary") %>
+  </div>
+
+<% end %>
+
+[ <%= link_to "Cancel request and return to article listings", articles_path %> ]

@@ -35,6 +35,27 @@ $navbar-default-bg: #8fbc8f;
   padding-left: 0;
 }
 
+.badge {
+  background-color: #d9edf7 !important;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+
+  &.edit {
+    background-color: rgba(143, 188, 143, 0.48) !important;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.input_checkbox input {
+  width: auto !important;
+}
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
@@ -60,7 +81,6 @@ footer {
     }
   }
 }
-
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
